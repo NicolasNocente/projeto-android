@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2:#3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'BebasNeue', cursive;
+    --fonte2: 'idroid', sans-serif;
+}
+body{
+    background-color: var(--cor0);
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0px;
+    font-family: var(--fonte0);
+}
+header{
+    height: 100px;
+    background-image: linear-gradient(to bottom, #3DDC84, #063D1E);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonte1);
+    margin: 0px;
+}
+nav{
+    background-color: #063D1E;
+    padding: 10px;
+    font-family: 'BebasNeue'
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+nav > a:hover{
+    background-color: #0d6634;
+    border: #0d6634;
+    outline: 10px solid #0d6634;
+    border-radius: 4px;
+
+}
+main{
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+img{
+    width: 100%;
+}
+img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+main > h1{
+    color: #105c31;
+    font-family: 'idroid';
+}
+main > h2{
+    color: #105c31;
+    background-image: linear-gradient(to right, #C5EBD6, white);
+    font-family: 'idroid'
+}
+div#extra{
+    background-color: #C5EBD6;
+    
+}
+div#extra > h2{
+    background-color: #2FA866;
+    color: white;
+    padding: 5px;
+    
+}
+div#extra > p{
+    padding: 10px;
+}
+footer{
+    color: white;
+    background-color: #105c31;
+    padding: 4px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+footer > p{
+    margin: 0px;
+}
+div.video{
+    position:relative;
+    background-color: #105c31;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
